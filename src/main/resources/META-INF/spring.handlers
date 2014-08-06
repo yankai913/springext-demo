@@ -1,0 +1,2 @@
+http\://www.lifestack.cn/schema/places=com.alibaba.springext.demo.handler.PlacesNamespaceHandler
+http\://www.lifestack.cn/schema/places/countries=com.alibaba.springext.demo.handler.PlacesCountriesNamespaceHandler

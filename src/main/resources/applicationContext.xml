@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:place="http://www.lifestack.cn/schema/places" xmlns:eg-countries="http://www.lifestack.cn/schema/places/countries"
+	xmlns:beans="http://www.springframework.org/schema/beans"
+	xsi:schemaLocation="
+                 http://www.lifestack.cn/schema/places           http://localhost:8080/schema/places.xsd
+                 http://www.lifestack.cn/schema/places/countries http://localhost:8080/schema/places-countries.xsd
+                 http://www.springframework.org/schema/beans     http://localhost:8080/schema/www.springframework.org/schema/beans/spring-beans.xsd
+             ">
+
+	<place:country id="country" desc="guojia" >
+		<eg-countries:china name="cn" >
+			<language>chinese</language>
+		</eg-countries:china>
+		<eg-countries:usa name="us">
+			<language>english</language>
+		</eg-countries:usa>
+	</place:country>
+	
+	<beans:import resource="services.xml"/>
+</beans:beans>
